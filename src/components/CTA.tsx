@@ -1,6 +1,7 @@
-import { AnimatedButton } from './AnimatedButton';
-import { ScrollFade } from './ScrollFade';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import React from "react";
+import { AnimatedButton } from "./AnimatedButton";
+import { ScrollFade } from "./ScrollFade";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 export function CTA() {
   return (
@@ -15,20 +16,22 @@ export function CTA() {
               Bring Your Idea to Life
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto px-4">
-              Whether you need a landing page, dashboard, or complete digital product—let's create something that works.
+              Whether you need a landing page, dashboard, or complete digital
+              product—let's create something that works.
             </p>
           </div>
         </ScrollFade>
 
         <ScrollFade direction="up" delay={0.2}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <AnimatedButton 
-              text1="Let's Collaborate" 
-              text2="Work Together" 
+            <AnimatedButton
+              text1="Let's Collaborate"
+              text2="Work Together"
               to="/contact"
               icon1={ArrowRight}
               icon2={Sparkles}
               variant="secondary"
+              className="min-w-[200px]"
             />
           </div>
         </ScrollFade>
@@ -38,15 +41,21 @@ export function CTA() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center px-4">
               <div>
                 <div className="text-2xl sm:text-3xl mb-2">Fast</div>
-                <div className="text-sm sm:text-base text-gray-400">Quick turnaround times</div>
+                <div className="text-sm sm:text-base text-gray-400">
+                  Quick turnaround times
+                </div>
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl mb-2">Reliable</div>
-                <div className="text-sm sm:text-base text-gray-400">Clear communication</div>
+                <div className="text-sm sm:text-base text-gray-400">
+                  Clear communication
+                </div>
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl mb-2">Quality</div>
-                <div className="text-sm sm:text-base text-gray-400">Attention to detail</div>
+                <div className="text-sm sm:text-base text-gray-400">
+                  Attention to detail
+                </div>
               </div>
             </div>
           </div>

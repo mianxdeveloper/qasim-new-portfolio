@@ -1,119 +1,120 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import React from "react";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
+import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 const projectData: Record<string, any> = {
-  '1': {
+  "1": {
     id: 1,
-    title: 'Kitchen Remodeling Landing Page',
-    category: 'Landing Page',
-    image: 'https://images.unsplash.com/photo-1682888818589-404faaa4dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwcmVtb2RlbGluZyUyMG1vZGVybnxlbnwxfHx8fDE3NjMyNzQwNzR8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'A modern, conversion-focused landing page designed for a kitchen remodeling company.',
-    role: ['UI/UX Design', 'Research', 'Wireframing', 'Prototyping'],
-    tools: ['Figma', 'Adobe Illustrator'],
-    timeline: '3 weeks',
-    challenge: 'The client needed a landing page that would capture leads effectively while showcasing their premium kitchen remodeling services. The main challenge was balancing visual appeal with clear calls-to-action.',
-    solution: 'Created a clean, structured layout with high-quality imagery, clear service descriptions, and strategically placed contact forms. Implemented trust signals through testimonials and before/after galleries.',
+    title: "Kitchen Remodeling Landing Page",
+    category: "Landing Page",
+    image: "/assets/Thumbnail1.png",
+    description:
+      "A modern, conversion-focused landing page designed for a kitchen remodeling company.",
+    role: ["UI/UX Design", "Research", "Wireframing", "Prototyping"],
+    tools: ["Figma", "Adobe Illustrator"],
+    timeline: "3 weeks",
+    challenge:
+      "The client needed a landing page that would capture leads effectively while showcasing their premium kitchen remodeling services. The main challenge was balancing visual appeal with clear calls-to-action.",
+    solution:
+      "Created a clean, structured layout with high-quality imagery, clear service descriptions, and strategically placed contact forms. Implemented trust signals through testimonials and before/after galleries.",
     nextProject: 2,
     prevProject: 8,
+    wireframeImages: [
+      "/assets/project-imgs/project1-img1.png",
+      "/assets/Thumbnail1.png",
+    ],
   },
-  '2': {
+  "2": {
     id: 2,
-    title: 'Bathroom Remodeling Website',
-    category: 'Website',
-    image: 'https://images.unsplash.com/photo-1625578324458-a106197ff141?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBiYXRocm9vbSUyMGludGVyaW9yfGVufDF8fHx8MTc2MzE3NTI2NXww&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Complete website redesign for a bathroom renovation company with focus on portfolio showcase.',
-    role: ['UI/UX Design', 'Visual Design', 'Responsive Design'],
-    tools: ['Figma'],
-    timeline: '4 weeks',
-    challenge: 'The existing website was outdated and didn\'t effectively showcase the company\'s premium work. Navigation was confusing and mobile experience was poor.',
-    solution: 'Designed a modern, image-focused website with intuitive navigation, prominent project gallery, and seamless mobile responsiveness. Added filtering system for project browsing.',
+    title: "Bathroom Remodeling Website",
+    category: "Website",
+    image: "/assets/Thumbnail2.png",
+    description:
+      "Complete website redesign for a bathroom renovation company with focus on portfolio showcase.",
+    role: ["UI/UX Design", "Visual Design", "Responsive Design"],
+    tools: ["Figma"],
+    timeline: "4 weeks",
+    challenge:
+      "The existing website was outdated and didn't effectively showcase the company's premium work. Navigation was confusing and mobile experience was poor.",
+    solution:
+      "Designed a modern, image-focused website with intuitive navigation, prominent project gallery, and seamless mobile responsiveness. Added filtering system for project browsing.",
     nextProject: 3,
     prevProject: 1,
+    wireframeImages: [
+      "/assets/Thumbnail2.png",
+      "/assets/project-imgs/project2-img1.png",
+    ],
   },
-  '3': {
+  "3": {
     id: 3,
-    title: 'Gym Brand Landing Page',
-    category: 'Landing Page',
-    image: 'https://images.unsplash.com/photo-1632077804406-188472f1a810?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxneW0lMjBmaXRuZXNzJTIwZXF1aXBtZW50fGVufDF8fHx8MTc2MzE4Nzc3M3ww&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'High-energy landing page for a fitness brand launching new membership packages.',
-    role: ['UI/UX Design', 'Branding Support', 'Prototyping'],
-    tools: ['Figma'],
-    timeline: '2 weeks',
-    challenge: 'Creating an energetic, motivating design that appeals to fitness enthusiasts while maintaining clarity and ease of use for membership sign-ups.',
-    solution: 'Bold typography, dynamic imagery, and clear membership tier comparison. Streamlined sign-up flow with minimal friction.',
+    title: "Gym Brand Landing Page",
+    category: "Landing Page",
+    image: "/assets/Thumbnail3.jpg",
+    description:
+      "High-energy landing page for a fitness brand launching new membership packages.",
+    role: ["UI/UX Design", "Branding Support", "Prototyping"],
+    tools: ["Figma"],
+    timeline: "2 weeks",
+    challenge:
+      "Creating an energetic, motivating design that appeals to fitness enthusiasts while maintaining clarity and ease of use for membership sign-ups.",
+    solution:
+      "Bold typography, dynamic imagery, and clear membership tier comparison. Streamlined sign-up flow with minimal friction.",
     nextProject: 4,
     prevProject: 2,
+    wireframeImages: [
+      "/assets/Thumbnail3.jpg",
+      "/assets/project-imgs/project3-img1.jpeg",
+      "/assets/project-imgs/project3-img2.jpeg",
+      "/assets/project-imgs/project3-img3.jpeg",
+    ],
   },
-  '4': {
+  "4": {
     id: 4,
-    title: 'Ecommerce Dashboard',
-    category: 'Dashboard',
-    image: 'https://images.unsplash.com/photo-1629963918958-1b62cfe3fe92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzYzMjcxMTg2fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Analytics dashboard for ecommerce store owners to track sales, inventory, and customer metrics.',
-    role: ['UI/UX Design', 'Data Visualization', 'User Research'],
-    tools: ['Figma'],
-    timeline: '4 weeks',
-    challenge: 'Presenting complex sales data in an easily digestible format while allowing deep-dive analysis for power users.',
-    solution: 'Hierarchical information architecture with overview dashboards and detailed drill-down views. Clear data visualization with contextual insights.',
+    title: "Ecommerce Dashboard",
+    category: "Dashboard",
+    image: "/assets/Thumbnail4.jpg",
+    description:
+      "Analytics dashboard for ecommerce store owners to track sales, inventory, and customer metrics.",
+    role: ["UI/UX Design", "Data Visualization", "User Research"],
+    tools: ["Figma"],
+    timeline: "4 weeks",
+    challenge:
+      "Presenting complex sales data in an easily digestible format while allowing deep-dive analysis for power users.",
+    solution:
+      "Hierarchical information architecture with overview dashboards and detailed drill-down views. Clear data visualization with contextual insights.",
     nextProject: 5,
     prevProject: 3,
+    wireframeImages: [
+      "/assets/Thumbnail4.jpg",
+      "/assets/project-imgs/project4-img1.jpeg",
+      "/assets/project-imgs/project4-img2.jpeg",
+      "/assets/project-imgs/project4-img3.jpeg",
+    ],
   },
-  '5': {
+  "5": {
     id: 5,
-    title: 'Laundry App UX/UI',
-    category: 'Mobile App',
-    image: 'https://images.unsplash.com/photo-1750587289608-dbaeba3ea64d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXVuZHJ5JTIwYXBwJTIwbW9iaWxlfGVufDF8fHx8MTc2MzI3NDA3NHww&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Mobile application for on-demand laundry service with scheduling and payment features.',
-    role: ['UI/UX Design', 'User Flows', 'Prototyping', 'Usability Testing'],
-    tools: ['Figma'],
-    timeline: '3 weeks',
-    challenge: 'Simplifying the booking process while accommodating various service types, scheduling preferences, and payment options.',
-    solution: 'Step-by-step booking flow with clear progress indicators. Smart defaults and saved preferences to speed up repeat bookings.',
+    title: "Laundry App UX/UI",
+    category: "Mobile App",
+    image: "/assets/Thumbnail5.jpg",
+    description:
+      "Mobile application for on-demand laundry service with scheduling and payment features.",
+    role: ["UI/UX Design", "User Flows", "Prototyping", "Usability Testing"],
+    tools: ["Figma"],
+    timeline: "3 weeks",
+    challenge:
+      "Simplifying the booking process while accommodating various service types, scheduling preferences, and payment options.",
+    solution:
+      "Step-by-step booking flow with clear progress indicators. Smart defaults and saved preferences to speed up repeat bookings.",
     nextProject: 6,
     prevProject: 4,
-  },
-  '6': {
-    id: 6,
-    title: 'SaaS Analytics Dashboard',
-    category: 'Dashboard',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWFzJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MzI3NDA3NXww&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Comprehensive analytics platform for SaaS companies to track user engagement and product metrics.',
-    role: ['UI/UX Design', 'Information Architecture', 'Data Visualization'],
-    tools: ['Figma'],
-    timeline: '4 weeks',
-    challenge: 'Creating a dashboard that serves both executive overview needs and detailed analyst requirements.',
-    solution: 'Modular dashboard system with customizable widgets, saved views, and intelligent data grouping.',
-    nextProject: 7,
-    prevProject: 5,
-  },
-  '7': {
-    id: 7,
-    title: 'Real Estate Web UI',
-    category: 'Website',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwcHJvcGVydHl8ZW58MXx8fHwxNzYzMjc0MDc1fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Property listing website with advanced search, filtering, and virtual tour capabilities.',
-    role: ['UI/UX Design', 'Responsive Design', 'Prototyping'],
-    tools: ['Figma'],
-    timeline: '4 weeks',
-    challenge: 'Designing an intuitive search experience with multiple filter criteria while maintaining visual appeal.',
-    solution: 'Smart filter system with real-time results, map integration, and comprehensive property detail pages.',
-    nextProject: 8,
-    prevProject: 6,
-  },
-  '8': {
-    id: 8,
-    title: 'Mindra Website',
-    category: 'Website',
-    image: 'https://images.unsplash.com/photo-1622131815526-eaae1e615381?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsYXB0b3AlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzMjI5NjAzfDA&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Modern SaaS website with focus on conversion and clear product communication.',
-    role: ['UI/UX Design', 'Visual Design', 'Prototyping'],
-    tools: ['Figma'],
-    timeline: '3 weeks',
-    challenge: 'Explaining complex SaaS features in a simple, digestible way while driving sign-ups.',
-    solution: 'Clear value proposition hierarchy, interactive feature demonstrations, and strategic CTA placement throughout.',
-    nextProject: 1,
-    prevProject: 7,
+    wireframeImages: [
+      "/assets/Thumbnail5.jpg",
+      "/assets/project-imgs/project5-img1.png",
+      "/assets/project-imgs/project5-img2.png",
+      "/assets/project-imgs/project5-img3.png",
+      "/assets/project-imgs/project5-img4.png",
+    ],
   },
 };
 
@@ -161,8 +162,12 @@ export function ProjectDetailPage() {
           <div className="inline-block px-4 py-1 bg-lime-500/20 text-lime-400 rounded-full text-sm mb-4">
             {project.category}
           </div>
-          <h1 className="text-4xl md:text-5xl mb-6 text-white">{project.title}</h1>
-          <p className="text-xl text-gray-300 leading-relaxed">{project.description}</p>
+          <h1 className="text-4xl md:text-5xl mb-6 text-white">
+            {project.title}
+          </h1>
+          <p className="text-xl text-gray-300 leading-relaxed">
+            {project.description}
+          </p>
         </div>
 
         {/* Project Details */}
@@ -196,36 +201,56 @@ export function ProjectDetailPage() {
         {/* Challenge */}
         <div className="mb-12">
           <h2 className="text-3xl mb-4 text-white">Challenge</h2>
-          <p className="text-lg text-gray-300 leading-relaxed">{project.challenge}</p>
+          <p className="text-lg text-gray-300 leading-relaxed">
+            {project.challenge}
+          </p>
         </div>
 
         {/* Solution */}
         <div className="mb-12">
           <h2 className="text-3xl mb-4 text-white">Solution</h2>
-          <p className="text-lg text-gray-300 leading-relaxed">{project.solution}</p>
+          <p className="text-lg text-gray-300 leading-relaxed">
+            {project.solution}
+          </p>
         </div>
 
         {/* UX Process */}
         <div className="mb-12">
           <h2 className="text-3xl mb-6 text-white">UX Process</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            {['Research', 'Wireframes', 'Design', 'Testing'].map((step, index) => (
-              <div key={index} className="bg-gray-800 border-2 border-gray-700 rounded-xl p-6 text-center">
-                <div className="w-10 h-10 bg-lime-500/20 text-lime-400 rounded-full flex items-center justify-center mx-auto mb-3">
-                  {index + 1}
+            {["Research", "Wireframes", "Design", "Testing"].map(
+              (step, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-800 border-2 border-gray-700 rounded-xl p-6 text-center"
+                >
+                  <div className="w-10 h-10 bg-lime-500/20 text-lime-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                    {index + 1}
+                  </div>
+                  <div className="text-white">{step}</div>
                 </div>
-                <div className="text-white">{step}</div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
 
-        {/* Wireframes/Screens Placeholder */}
+        {/* Wireframes/Screens Section */}
         <div className="mb-12">
-          <h2 className="text-3xl mb-6 text-white">Wireframes & Final Screens</h2>
+          <h2 className="text-3xl mb-6 text-white">
+            Wireframes & Final Screens
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="aspect-video bg-gray-800 border border-gray-700 rounded-xl"></div>
+            {project.wireframeImages.map((imageUrl: string, index: number) => (
+              <div
+                key={index}
+                className="aspect-video bg-gray-800 border border-gray-700 rounded-xl overflow-hidden"
+              >
+                <ImageWithFallback
+                  src={imageUrl}
+                  alt={`${project.title} - Screen ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
             ))}
           </div>
         </div>

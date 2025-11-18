@@ -1,84 +1,66 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { ExternalLink, ArrowRight, Send } from 'lucide-react';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
-import { AnimatedButton } from '../components/AnimatedButton';
-import { ScrollFade } from '../components/ScrollFade';
+import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { ExternalLink, ArrowRight, Send } from "lucide-react";
+import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { AnimatedButton } from "../components/AnimatedButton";
+import { ScrollFade } from "../components/ScrollFade";
 
 const allProjects = [
   {
     id: 1,
-    title: 'Kitchen Remodeling Landing Page',
-    category: 'Landing Page',
-    tags: ['Landing Page', 'Website'],
-    image: 'https://images.unsplash.com/photo-1682888818589-404faaa4dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwcmVtb2RlbGluZyUyMG1vZGVybnxlbnwxfHx8fDE3NjMyNzQwNzR8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Modern landing page for kitchen remodeling services with lead capture forms.',
+    title: "Kitchen Remodeling Landing Page",
+    category: "Landing Page",
+    tags: ["Landing Page", "Website"],
+    image: "/assets/Thumbnail1.png",
+    description:
+      "Modern landing page for kitchen remodeling services with lead capture forms.",
   },
   {
     id: 2,
-    title: 'Bathroom Remodeling Website',
-    category: 'Website',
-    tags: ['Website'],
-    image: 'https://images.unsplash.com/photo-1625578324458-a106197ff141?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBiYXRocm9vbSUyMGludGVyaW9yfGVufDF8fHx8MTc2MzE3NTI2NXww&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Complete website for bathroom renovation company with project gallery.',
+    title: "Bathroom Remodeling Website",
+    category: "Website",
+    tags: ["Website"],
+    image: "/assets/Thumbnail2.png",
+    description:
+      "Complete website for bathroom renovation company with project gallery.",
   },
   {
     id: 3,
-    title: 'Gym Brand Landing Page',
-    category: 'Landing Page',
-    tags: ['Landing Page'],
-    image: 'https://images.unsplash.com/photo-1632077804406-188472f1a810?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxneW0lMjBmaXRuZXNzJTIwZXF1aXBtZW50fGVufDF8fHx8MTc2MzE4Nzc3M3ww&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'High-energy landing page for fitness brand with membership sign-up.',
+    title: "Gym Brand Landing Page",
+    category: "Landing Page",
+    tags: ["Landing Page"],
+    image: "/assets/Thumbnail3.jpg",
+    description:
+      "High-energy landing page for fitness brand with membership sign-up.",
   },
   {
     id: 4,
-    title: 'Ecommerce Dashboard',
-    category: 'Dashboard',
-    tags: ['Dashboard'],
-    image: 'https://images.unsplash.com/photo-1629963918958-1b62cfe3fe92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzYzMjcxMTg2fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Analytics dashboard for ecommerce store with sales tracking and metrics.',
+    title: "Ecommerce Dashboard",
+    category: "Dashboard",
+    tags: ["Dashboard"],
+    image: "/assets/Thumbnail4.jpg",
+    description:
+      "Analytics dashboard for ecommerce store with sales tracking and metrics.",
   },
   {
     id: 5,
-    title: 'Laundry App UX/UI',
-    category: 'Mobile App',
-    tags: ['Mobile App'],
-    image: 'https://images.unsplash.com/photo-1750587289608-dbaeba3ea64d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXVuZHJ5JTIwYXBwJTIwbW9iaWxlfGVufDF8fHx8MTc2MzI3NDA3NHww&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Mobile app design for on-demand laundry service with booking flow.',
-  },
-  {
-    id: 6,
-    title: 'SaaS Analytics Dashboard',
-    category: 'Dashboard',
-    tags: ['Dashboard'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWFzJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MzI3NDA3NXww&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Complex data visualization dashboard for SaaS analytics platform.',
-  },
-  {
-    id: 7,
-    title: 'Real Estate Web UI',
-    category: 'Website',
-    tags: ['Website'],
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwcHJvcGVydHl8ZW58MXx8fHwxNzYzMjc0MDc1fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Property listing website with advanced search and filtering.',
-  },
-  {
-    id: 8,
-    title: 'Mindra Website',
-    category: 'Website',
-    tags: ['Website'],
-    image: 'https://images.unsplash.com/photo-1622131815526-eaae1e615381?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsYXB0b3AlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzMjI5NjAzfDA&ixlib=rb-4.1.0&q=80&w=1080',
-    description: 'Modern SaaS website with clean layout and conversion focus.',
+    title: "Laundry App UX/UI",
+    category: "Mobile App",
+    tags: ["Mobile App"],
+    image: "/assets/Thumbnail5.jpg",
+    description:
+      "Mobile app design for on-demand laundry service with booking flow.",
   },
 ];
 
-const filters = ['All', 'Website', 'Landing Page', 'Dashboard', 'Mobile App'];
+const filters = ["All", "Website", "Landing Page", "Dashboard", "Mobile App"];
 
 export function ProjectsPage() {
-  const [activeFilter, setActiveFilter] = useState('All');
+  const [activeFilter, setActiveFilter] = useState("All");
 
   const filteredProjects =
-    activeFilter === 'All'
+    activeFilter === "All"
       ? allProjects
       : allProjects.filter((project) => project.tags.includes(activeFilter));
 
@@ -88,9 +70,12 @@ export function ProjectsPage() {
         {/* Header */}
         <ScrollFade direction="up">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6 text-white px-4">My Work</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6 text-white px-4">
+              My Work
+            </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto px-4">
-              A collection of projects spanning websites, dashboards, landing pages, and mobile applications.
+              A collection of projects spanning websites, dashboards, landing
+              pages, and mobile applications.
             </p>
           </div>
         </ScrollFade>
@@ -104,8 +89,8 @@ export function ProjectsPage() {
                 onClick={() => setActiveFilter(filter)}
                 className={`px-4 sm:px-5 md:px-6 py-1.5 sm:py-2 rounded-full transition-all text-sm sm:text-base ${
                   activeFilter === filter
-                    ? 'bg-lime-500 text-gray-900 shadow-md'
-                    : 'bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-700'
+                    ? "bg-lime-500 text-gray-900 shadow-md"
+                    : "bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-700"
                 }`}
               >
                 {filter}
@@ -122,24 +107,31 @@ export function ProjectsPage() {
                 to={`/projects/${project.id}`}
                 className="group relative bg-gray-800 border border-gray-700 rounded-xl sm:rounded-2xl overflow-hidden hover:border-lime-500 hover:shadow-xl transition-all block h-full"
               >
-              <div className="aspect-[4/3] overflow-hidden bg-gray-900">
-                <ImageWithFallback
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6">
-                <div className="text-sm text-lime-400 mb-2">{project.category}</div>
-                <h3 className="text-xl text-white mb-2 group-hover:text-lime-400 transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-gray-400 text-sm mb-4">{project.description}</p>
-                <div className="flex items-center gap-2 text-gray-400 group-hover:text-white transition-colors">
-                  <span className="text-sm">View Project</span>
-                  <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform duration-500 animate-icon-pulse" />
+                <div className="aspect-[4/3] overflow-hidden bg-gray-900">
+                  <ImageWithFallback
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-              </div>
+                <div className="p-6">
+                  <div className="text-sm text-lime-400 mb-2">
+                    {project.category}
+                  </div>
+                  <h3 className="text-xl text-white mb-2 group-hover:text-lime-400 transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex items-center gap-2 text-gray-400 group-hover:text-white transition-colors">
+                    <span className="text-sm">View Project</span>
+                    <ExternalLink
+                      size={16}
+                      className="group-hover:translate-x-1 transition-transform duration-500 animate-icon-pulse"
+                    />
+                  </div>
+                </div>
               </Link>
             </ScrollFade>
           ))}
@@ -148,11 +140,15 @@ export function ProjectsPage() {
         {/* CTA */}
         <ScrollFade direction="up">
           <div className="text-center mt-16 p-12 bg-gradient-to-br from-lime-600 to-lime-700 rounded-3xl">
-            <h2 className="text-3xl mb-4 text-white">Have a project in mind?</h2>
-            <p className="text-white/90 mb-6">Let's discuss how I can help bring your vision to life.</p>
-            <AnimatedButton 
-              text1="Get in Touch" 
-              text2="Contact Me" 
+            <h2 className="text-3xl mb-4 text-white">
+              Have a project in mind?
+            </h2>
+            <p className="text-white/90 mb-6">
+              Let's discuss how I can help bring your vision to life.
+            </p>
+            <AnimatedButton
+              text1="Get in Touch"
+              text2="Contact Me"
               to="/contact"
               icon1={ArrowRight}
               icon2={Send}
