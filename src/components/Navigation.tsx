@@ -207,7 +207,7 @@ export function Navigation() {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:hidden mt-3 p-3 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-lg shadow-black/5 relative"
+            className="md:hidden mt-3 p-3 bg-white backdrop-blur-xl border border-white/20 rounded-3xl shadow-lg shadow-black relative"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-transparent rounded-3xl pointer-events-none"></div>
             <div className="flex flex-col gap-2 relative z-10">

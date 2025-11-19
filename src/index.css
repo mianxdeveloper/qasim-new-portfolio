@@ -211,6 +211,7 @@
   body {
     line-height: inherit;
     overflow-x: hidden !important;
+    max-width: 100% !important;
   }
 
   hr {
@@ -486,6 +487,8 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
   }
 
   body {
