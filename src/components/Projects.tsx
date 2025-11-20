@@ -8,33 +8,33 @@ import { ScrollFade } from "./ScrollFade";
 const projects = [
   {
     id: 1,
-    title: "Kitchen Remodeling Landing Page",
+    title: "Gym Brand Landing Page",
     category: "Landing Page",
-    image: "/assets/Thumbnail1.png",
+    image: "/assets/Thumbnail5.jpg",
   },
   {
     id: 2,
-    title: "Bathroom Remodeling Website",
-    category: "Website",
+    title: "Ecommerce Dashboard",
+    category: "Dashboard",
     image: "/assets/Thumbnail2.png",
   },
   {
     id: 3,
-    title: "Gym Brand Landing Page",
-    category: "Landing Page",
-    image: "/assets/Thumbnail3.jpg",
-  },
-  {
-    id: 4,
-    title: "Ecommerce Dashboard",
-    category: "Dashboard",
+    title: "Laundry App UX/UI",
+    category: "Mobile App",
     image: "/assets/Thumbnail4.jpg",
   },
   {
+    id: 4,
+    title: "Bathroom Remodeling Website",
+    category: "Website",
+    image: "/assets/Thumbnail1.png",
+  },
+  {
     id: 5,
-    title: "Laundry App UX/UI",
-    category: "Mobile App",
-    image: "/assets/Thumbnail5.jpg",
+    title: "Kitchen Remodeling Landing Page",
+    category: "Landing Page",
+    image: "/assets/Thumbnail3.jpg",
   },
 ];
 

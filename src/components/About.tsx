@@ -77,7 +77,7 @@ export function About() {
         </div>
 
         {/* Client Logos Placeholder */}
-        <ScrollFade direction="up" delay={0.4}>
+        {/* <ScrollFade direction="up" delay={0.4}>
           <div className="mt-24 pt-12 border-t border-gray-800">
             <p className="text-center text-gray-500 mb-8">
               Trusted by clients across industries
@@ -88,7 +88,7 @@ export function About() {
               ))}
             </div>
           </div>
-        </ScrollFade>
+        </ScrollFade> */}
       </div>
     </section>
   );

@@ -6,51 +6,9 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 const projectData: Record<string, any> = {
   "1": {
     id: 1,
-    title: "Kitchen Remodeling Landing Page",
-    category: "Landing Page",
-    image: "/assets/Thumbnail1.png",
-    description:
-      "A modern, conversion-focused landing page designed for a kitchen remodeling company.",
-    role: ["UI/UX Design", "Research", "Wireframing", "Prototyping"],
-    tools: ["Figma", "Adobe Illustrator"],
-    timeline: "3 weeks",
-    challenge:
-      "The client needed a landing page that would capture leads effectively while showcasing their premium kitchen remodeling services. The main challenge was balancing visual appeal with clear calls-to-action.",
-    solution:
-      "Created a clean, structured layout with high-quality imagery, clear service descriptions, and strategically placed contact forms. Implemented trust signals through testimonials and before/after galleries.",
-    nextProject: 2,
-    prevProject: 8,
-    wireframeImages: [
-      "/assets/project-imgs/project1-img1.png",
-      "/assets/Thumbnail1.png",
-    ],
-  },
-  "2": {
-    id: 2,
-    title: "Bathroom Remodeling Website",
-    category: "Website",
-    image: "/assets/Thumbnail2.png",
-    description:
-      "Complete website redesign for a bathroom renovation company with focus on portfolio showcase.",
-    role: ["UI/UX Design", "Visual Design", "Responsive Design"],
-    tools: ["Figma"],
-    timeline: "4 weeks",
-    challenge:
-      "The existing website was outdated and didn't effectively showcase the company's premium work. Navigation was confusing and mobile experience was poor.",
-    solution:
-      "Designed a modern, image-focused website with intuitive navigation, prominent project gallery, and seamless mobile responsiveness. Added filtering system for project browsing.",
-    nextProject: 3,
-    prevProject: 1,
-    wireframeImages: [
-      "/assets/Thumbnail2.png",
-      "/assets/project-imgs/project2-img1.png",
-    ],
-  },
-  "3": {
-    id: 3,
     title: "Gym Brand Landing Page",
     category: "Landing Page",
-    image: "/assets/Thumbnail3.jpg",
+    image: "/assets/Thumbnail5.jpg",
     description:
       "High-energy landing page for a fitness brand launching new membership packages.",
     role: ["UI/UX Design", "Branding Support", "Prototyping"],
@@ -60,20 +18,65 @@ const projectData: Record<string, any> = {
       "Creating an energetic, motivating design that appeals to fitness enthusiasts while maintaining clarity and ease of use for membership sign-ups.",
     solution:
       "Bold typography, dynamic imagery, and clear membership tier comparison. Streamlined sign-up flow with minimal friction.",
+    nextProject: 2,
+    prevProject: 5,
+    wireframeImages: [
+      "/assets/Thumbnail5.jpg",
+      "/assets/project-imgs/project5-img1.png",
+      "/assets/project-imgs/project5-img2.png",
+      "/assets/project-imgs/project5-img3.png",
+      "/assets/project-imgs/project5-img4.png",
+    ],
+  },
+  "2": {
+    id: 2,
+    title: "Ecommerce Dashboard",
+    category: "Dashboard",
+    description:
+      "Analytics dashboard for ecommerce store owners to track sales, inventory, and customer metrics.",
+    role: ["UI/UX Design", "Data Visualization", "User Research"],
+    tools: ["Figma"],
+    timeline: "4 weeks",
+    challenge:
+      "Presenting complex sales data in an easily digestible format while allowing deep-dive analysis for power users.",
+    solution:
+      "Hierarchical information architecture with overview dashboards and detailed drill-down views. Clear data visualization with contextual insights.",
+    image: "/assets/Thumbnail2.png",
+    nextProject: 3,
+    prevProject: 1,
+    wireframeImages: [
+      "/assets/Thumbnail2.png",
+      "/assets/project-imgs/project2-img1.png",
+    ],
+  },
+  "3": {
+    id: 3,
+    title: "Laundry App UX/UI",
+    category: "Mobile App",
+    image: "/assets/Thumbnail4.jpg",
+    description:
+      "Mobile application for on-demand laundry service with scheduling and payment features.",
+    role: ["UI/UX Design", "User Flows", "Prototyping", "Usability Testing"],
+    tools: ["Figma"],
+    timeline: "3 weeks",
+    challenge:
+      "Simplifying the booking process while accommodating various service types, scheduling preferences, and payment options.",
+    solution:
+      "Step-by-step booking flow with clear progress indicators. Smart defaults and saved preferences to speed up repeat bookings.",
     nextProject: 4,
     prevProject: 2,
     wireframeImages: [
-      "/assets/Thumbnail3.jpg",
-      "/assets/project-imgs/project3-img1.jpeg",
-      "/assets/project-imgs/project3-img2.jpeg",
-      "/assets/project-imgs/project3-img3.jpeg",
+      "/assets/Thumbnail4.jpg",
+      "/assets/project-imgs/project4-img1.jpeg",
+      "/assets/project-imgs/project4-img2.jpeg",
+      "/assets/project-imgs/project4-img3.jpeg",
     ],
   },
   "4": {
     id: 4,
-    title: "Ecommerce Dashboard",
-    category: "Dashboard",
-    image: "/assets/Thumbnail4.jpg",
+    title: "Bathroom Remodeling Website",
+    category: "Website",
+    image: "/assets/Thumbnail3.jpg",
     description:
       "Analytics dashboard for ecommerce store owners to track sales, inventory, and customer metrics.",
     role: ["UI/UX Design", "Data Visualization", "User Research"],
@@ -86,34 +89,31 @@ const projectData: Record<string, any> = {
     nextProject: 5,
     prevProject: 3,
     wireframeImages: [
-      "/assets/Thumbnail4.jpg",
-      "/assets/project-imgs/project4-img1.jpeg",
-      "/assets/project-imgs/project4-img2.jpeg",
-      "/assets/project-imgs/project4-img3.jpeg",
+      "/assets/Thumbnail3.jpg",
+      "/assets/project-imgs/project3-img1.jpeg",
+      "/assets/project-imgs/project3-img2.jpeg",
+      "/assets/project-imgs/project3-img3.jpeg",
     ],
   },
   "5": {
     id: 5,
-    title: "Laundry App UX/UI",
-    category: "Mobile App",
-    image: "/assets/Thumbnail5.jpg",
+    title: "Kitchen Remodeling Landing Page",
+    category: "Landing Page",
+    image: "/assets/Thumbnail1.png",
     description:
-      "Mobile application for on-demand laundry service with scheduling and payment features.",
-    role: ["UI/UX Design", "User Flows", "Prototyping", "Usability Testing"],
-    tools: ["Figma"],
+      "A modern, conversion-focused landing page designed for a kitchen remodeling company.",
+    role: ["UI/UX Design", "Research", "Wireframing", "Prototyping"],
+    tools: ["Figma", "Adobe Illustrator"],
     timeline: "3 weeks",
     challenge:
-      "Simplifying the booking process while accommodating various service types, scheduling preferences, and payment options.",
+      "The client needed a landing page that would capture leads effectively while showcasing their premium kitchen remodeling services. The main challenge was balancing visual appeal with clear calls-to-action.",
     solution:
-      "Step-by-step booking flow with clear progress indicators. Smart defaults and saved preferences to speed up repeat bookings.",
-    nextProject: 6,
-    prevProject: 4,
+      "Created a clean, structured layout with high-quality imagery, clear service descriptions, and strategically placed contact forms. Implemented trust signals through testimonials and before/after galleries.",
+    nextProject: 4,
+    prevProject: 1,
     wireframeImages: [
-      "/assets/Thumbnail5.jpg",
-      "/assets/project-imgs/project5-img1.png",
-      "/assets/project-imgs/project5-img2.png",
-      "/assets/project-imgs/project5-img3.png",
-      "/assets/project-imgs/project5-img4.png",
+      "/assets/project-imgs/project1-img1.png",
+      "/assets/Thumbnail1.png",
     ],
   },
 };
@@ -262,11 +262,11 @@ export function ProjectDetailPage() {
             className="group relative inline-flex items-center justify-center h-[52px] px-8 min-w-[180px] bg-[#1f2a38] text-white rounded-full overflow-hidden transition-all"
           >
             <span className="btn-text-one absolute w-full left-0 flex items-center justify-center gap-2 text-sm font-medium uppercase tracking-wider transition-[top] duration-500 ease-in-out top-1/2 -translate-y-1/2">
-              <ArrowLeft size={16} className="animate-icon-pulse" />
+              <ArrowLeft size={14} className="animate-icon-pulse" />
               Previous
             </span>
             <span className="btn-text-two absolute w-full left-0 flex items-center justify-center gap-2 text-sm font-medium uppercase tracking-wider transition-[top] duration-500 ease-in-out top-[150%] -translate-y-1/2">
-              <ArrowLeft size={16} className="animate-icon-pulse" />
+              <ArrowLeft size={14} className="animate-icon-pulse" />
               Prev Project
             </span>
           </button>
@@ -276,11 +276,11 @@ export function ProjectDetailPage() {
           >
             <span className="btn-text-one absolute w-full left-0 flex items-center justify-center gap-2 text-sm font-medium uppercase tracking-wider transition-[top] duration-500 ease-in-out top-1/2 -translate-y-1/2">
               Next
-              <ArrowRight size={16} className="animate-icon-pulse" />
+              <ArrowRight size={14} className="animate-icon-pulse" />
             </span>
             <span className="btn-text-two absolute w-full left-0 flex items-center justify-center gap-2 text-sm font-medium uppercase tracking-wider transition-[top] duration-500 ease-in-out top-[150%] -translate-y-1/2">
               Next Project
-              <ArrowRight size={16} className="animate-icon-pulse" />
+              <ArrowRight size={14} className="animate-icon-pulse" />
             </span>
           </button>
         </div>

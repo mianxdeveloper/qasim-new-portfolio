@@ -9,48 +9,48 @@ import { ScrollFade } from "../components/ScrollFade";
 const allProjects = [
   {
     id: 1,
-    title: "Kitchen Remodeling Landing Page",
-    category: "Landing Page",
-    tags: ["Landing Page", "Website"],
-    image: "/assets/Thumbnail1.png",
-    description:
-      "Modern landing page for kitchen remodeling services with lead capture forms.",
-  },
-  {
-    id: 2,
-    title: "Bathroom Remodeling Website",
-    category: "Website",
-    tags: ["Website"],
-    image: "/assets/Thumbnail2.png",
-    description:
-      "Complete website for bathroom renovation company with project gallery.",
-  },
-  {
-    id: 3,
     title: "Gym Brand Landing Page",
     category: "Landing Page",
     tags: ["Landing Page"],
-    image: "/assets/Thumbnail3.jpg",
+    image: "/assets/Thumbnail5.jpg",
     description:
       "High-energy landing page for fitness brand with membership sign-up.",
   },
   {
-    id: 4,
+    id: 2,
     title: "Ecommerce Dashboard",
     category: "Dashboard",
     tags: ["Dashboard"],
-    image: "/assets/Thumbnail4.jpg",
+    image: "/assets/Thumbnail2.png",
     description:
       "Analytics dashboard for ecommerce store with sales tracking and metrics.",
   },
   {
-    id: 5,
+    id: 3,
     title: "Laundry App UX/UI",
     category: "Mobile App",
     tags: ["Mobile App"],
-    image: "/assets/Thumbnail5.jpg",
+    image: "/assets/Thumbnail4.jpg",
     description:
       "Mobile app design for on-demand laundry service with booking flow.",
+  },
+  {
+    id: 4,
+    title: "Bathroom Remodeling Website",
+    category: "Website",
+    tags: ["Website"],
+    image: "/assets/Thumbnail1.png",
+    description:
+      "Complete website for bathroom renovation company with project gallery.",
+  },
+  {
+    id: 5,
+    title: "Kitchen Remodeling Landing Page",
+    category: "Landing Page",
+    tags: ["Landing Page", "Website"],
+    image: "/assets/Thumbnail3.jpg",
+    description:
+      "Modern landing page for kitchen remodeling services with lead capture forms.",
   },
 ];
 
