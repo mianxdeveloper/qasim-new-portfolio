@@ -1,4 +1,5 @@
-import { useEffect, useRef } from 'react';
+import React from "react";
+import { useEffect, useRef } from "react";
 
 export function ScrollSpeed() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -8,12 +9,12 @@ export function ScrollSpeed() {
       if (sectionRef.current) {
         const rect = sectionRef.current.getBoundingClientRect();
         const isInView = rect.top < window.innerHeight && rect.bottom > 0;
-        
+
         if (isInView) {
           // Apply scroll speed multiplier
           const scrollSpeed = 1.05;
-          document.documentElement.style.scrollBehavior = 'auto';
-          
+          document.documentElement.style.scrollBehavior = "auto";
+
           // This creates a faster scroll effect
           requestAnimationFrame(() => {
             window.scrollBy(0, window.scrollY * (scrollSpeed - 1) * 0.01);
@@ -22,8 +23,8 @@ export function ScrollSpeed() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (

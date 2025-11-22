@@ -9,7 +9,7 @@ import { ScrollFade } from "../components/ScrollFade";
 const allProjects = [
   {
     id: 1,
-    title: "Gym Brand Landing Page",
+    title: "IronClad Fitness Website",
     category: "Landing Page",
     tags: ["Landing Page"],
     image: "/assets/Thumbnail5.jpg",
@@ -18,7 +18,7 @@ const allProjects = [
   },
   {
     id: 2,
-    title: "Ecommerce Dashboard",
+    title: "Crypto Vault Website",
     category: "Dashboard",
     tags: ["Dashboard"],
     image: "/assets/Thumbnail2.png",
@@ -27,7 +27,7 @@ const allProjects = [
   },
   {
     id: 3,
-    title: "Laundry App UX/UI",
+    title: "Real Estate Website",
     category: "Mobile App",
     tags: ["Mobile App"],
     image: "/assets/Thumbnail4.jpg",
@@ -36,7 +36,7 @@ const allProjects = [
   },
   {
     id: 4,
-    title: "Bathroom Remodeling Website",
+    title: "RenovateRight - Bathroom and Kitchen Remodeling Website",
     category: "Website",
     tags: ["Website"],
     image: "/assets/Thumbnail1.png",
@@ -45,7 +45,7 @@ const allProjects = [
   },
   {
     id: 5,
-    title: "Kitchen Remodeling Landing Page",
+    title: "Plumbing Website",
     category: "Landing Page",
     tags: ["Landing Page", "Website"],
     image: "/assets/Thumbnail3.jpg",

@@ -6,7 +6,7 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 const projectData: Record<string, any> = {
   "1": {
     id: 1,
-    title: "Gym Brand Landing Page",
+    title: "IronClad Fitness Website",
     category: "Landing Page",
     image: "/assets/Thumbnail5.jpg",
     description:
@@ -30,7 +30,7 @@ const projectData: Record<string, any> = {
   },
   "2": {
     id: 2,
-    title: "Ecommerce Dashboard",
+    title: "Crypto Vault Website",
     category: "Dashboard",
     description:
       "Analytics dashboard for ecommerce store owners to track sales, inventory, and customer metrics.",
@@ -51,11 +51,11 @@ const projectData: Record<string, any> = {
   },
   "3": {
     id: 3,
-    title: "Laundry App UX/UI",
+    title: "Real Estate Website",
     category: "Mobile App",
     image: "/assets/Thumbnail4.jpg",
     description:
-      "Mobile application for on-demand laundry service with scheduling and payment features.",
+      "Mobile application for on-demand Real Estate with scheduling and payment features.",
     role: ["UI/UX Design", "User Flows", "Prototyping", "Usability Testing"],
     tools: ["Figma"],
     timeline: "3 weeks",
@@ -74,7 +74,7 @@ const projectData: Record<string, any> = {
   },
   "4": {
     id: 4,
-    title: "Bathroom Remodeling Website",
+    title: "RenovateRight - Bathroom and Kitchen Remodeling Website",
     category: "Website",
     image: "/assets/Thumbnail3.jpg",
     description:
@@ -97,7 +97,7 @@ const projectData: Record<string, any> = {
   },
   "5": {
     id: 5,
-    title: "Kitchen Remodeling Landing Page",
+    title: "Plumbing Website",
     category: "Landing Page",
     image: "/assets/Thumbnail1.png",
     description:
@@ -259,7 +259,7 @@ export function ProjectDetailPage() {
         <div className="flex justify-between items-center pt-12 border-t border-gray-700 gap-4">
           <button
             onClick={() => navigate(`/projects/${project.prevProject}`)}
-            className="group relative inline-flex items-center justify-center h-[52px] px-8 min-w-[180px] bg-[#1f2a38] text-white rounded-full overflow-hidden transition-all"
+            className="group relative inline-flex items-center justify-center h-[52px] px-8  bg-[#1f2a38] text-white rounded-full overflow-hidden transition-all w-full sm:min-w-[180px]"
           >
             <span className="btn-text-one absolute w-full left-0 flex items-center justify-center gap-2 text-sm font-medium uppercase tracking-wider transition-[top] duration-500 ease-in-out top-1/2 -translate-y-1/2">
               <ArrowLeft size={14} className="animate-icon-pulse" />
@@ -272,7 +272,7 @@ export function ProjectDetailPage() {
           </button>
           <button
             onClick={() => navigate(`/projects/${project.nextProject}`)}
-            className="group relative inline-flex items-center justify-center h-[52px] px-8 min-w-[180px] bg-[#1f2a38] text-white rounded-full overflow-hidden transition-all"
+            className="group relative inline-flex items-center justify-center h-[52px] px-8  bg-[#1f2a38] text-white rounded-full overflow-hidden transition-all w-full sm:min-w-[180px]"
           >
             <span className="btn-text-one absolute w-full left-0 flex items-center justify-center gap-2 text-sm font-medium uppercase tracking-wider transition-[top] duration-500 ease-in-out top-1/2 -translate-y-1/2">
               Next

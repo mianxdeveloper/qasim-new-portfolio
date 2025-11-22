@@ -8,31 +8,31 @@ import { ScrollFade } from "./ScrollFade";
 const projects = [
   {
     id: 1,
-    title: "Gym Brand Landing Page",
+    title: "IronClad Fitness Website",
     category: "Landing Page",
     image: "/assets/Thumbnail5.jpg",
   },
   {
     id: 2,
-    title: "Ecommerce Dashboard",
+    title: "Crypto Vault Website",
     category: "Dashboard",
     image: "/assets/Thumbnail2.png",
   },
   {
     id: 3,
-    title: "Laundry App UX/UI",
+    title: "Real Estate Website",
     category: "Mobile App",
     image: "/assets/Thumbnail4.jpg",
   },
   {
     id: 4,
-    title: "Bathroom Remodeling Website",
+    title: "RenovateRight - Bathroom and Kitchen Remodeling Website",
     category: "Website",
     image: "/assets/Thumbnail1.png",
   },
   {
     id: 5,
-    title: "Kitchen Remodeling Landing Page",
+    title: "Plumbing Website",
     category: "Landing Page",
     image: "/assets/Thumbnail3.jpg",
   },

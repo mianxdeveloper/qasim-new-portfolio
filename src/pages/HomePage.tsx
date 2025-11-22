@@ -15,7 +15,6 @@ export function HomePage() {
   return (
     <>
       <Hero />
-      <ScrollSpeed />
       <About />
       <Services />
       <PrototypeShowcase />
