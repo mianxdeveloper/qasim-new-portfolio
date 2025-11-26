@@ -19,20 +19,17 @@ export function About() {
               </h2>
               <div className="space-y-4 sm:space-y-6 text-gray-400 text-base sm:text-lg leading-relaxed">
                 <p>
-                  Qasim Ali is a UI/UX Designer focused on creating clean,
-                  structured and high-performing digital experiences that solve
-                  real business problems.
+                  I'm a UXUI Designer who builds clean, structured and
+                  conversion-focused web experiences. My work is grounded in
+                  clear layout planning, thoughtful user flows, and fast,
+                  precise execution in Figma.
                 </p>
                 <p>
-                  With experience spanning across ecommerce, real estate, SaaS,
-                  fitness, and service-based industries, he has delivered 6+
-                  design projects including brand launches and product
-                  redesigns.
-                </p>
-                <p>
-                  His work combines strategic thinking, functional UX, and
-                  refined visual design—built in Figma with careful attention to
-                  typography, spacing, and hierarchy.
+                  I work with founders, agencies, and service businesses that
+                  want designs that feel refined, load smoothly, and guide users
+                  without friction. Every choice — section hierarchy, spacing,
+                  or typography — is shaped to support real results, not
+                  decoration.
                 </p>
               </div>
               <div className="mt-6 sm:mt-8">

@@ -21,7 +21,7 @@ const allProjects = [
     title: "Crypto Vault Website",
     category: "Dashboard",
     tags: ["Dashboard"],
-    image: "/assets/Thumbnail2.png",
+    image: "/assets/Thumbnail2.jpg",
     description:
       "Analytics dashboard for ecommerce store with sales tracking and metrics.",
   },

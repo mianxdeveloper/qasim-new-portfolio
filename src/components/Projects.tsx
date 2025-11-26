@@ -16,7 +16,7 @@ const projects = [
     id: 2,
     title: "Crypto Vault Website",
     category: "Dashboard",
-    image: "/assets/Thumbnail2.png",
+    image: "/assets/Thumbnail2.jpg",
   },
   {
     id: 3,

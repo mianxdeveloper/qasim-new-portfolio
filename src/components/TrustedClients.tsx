@@ -1,12 +1,15 @@
-import { ScrollFade } from './ScrollFade';
+import React from "react";
+import { Link } from "react-router-dom";
+import { ScrollFade } from "./ScrollFade";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 const clients = [
-  { name: 'Mindra', industry: 'Product Design' },
-  { name: 'Tech Startups', industry: 'SaaS' },
-  { name: 'E-commerce Brands', industry: 'Retail' },
-  { name: 'Real Estate Firms', industry: 'Property' },
-  { name: 'Fitness Studios', industry: 'Health & Wellness' },
-  { name: 'Service Agencies', industry: 'B2B' },
+  { name: "Mindra", industry: "Product Design" },
+  { name: "Tech Startups", industry: "SaaS" },
+  { name: "E-commerce Brands", industry: "Retail" },
+  { name: "Real Estate Firms", industry: "Property" },
+  { name: "Fitness Studios", industry: "Health & Wellness" },
+  { name: "Service Agencies", industry: "B2B" },
 ];
 
 export function TrustedClients() {
@@ -20,8 +23,8 @@ export function TrustedClients() {
               Trusted by Clients Worldwide
             </h2>
             <p className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto">
-              I've partnered with startups, agencies, and businesses across multiple industries
-              to deliver designs that drive results.
+              I've partnered with startups, agencies, and businesses across
+              multiple industries to deliver designs that drive results.
             </p>
           </div>
         </ScrollFade>
@@ -30,29 +33,45 @@ export function TrustedClients() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
           <ScrollFade direction="up" delay={0.1}>
             <div className="text-center">
-              <div className="text-4xl sm:text-5xl md:text-6xl mb-2 text-white">6+</div>
-              <div className="text-sm sm:text-base text-gray-400">Projects Delivered</div>
+              <div className="text-4xl sm:text-5xl md:text-6xl mb-2 text-white">
+                6+
+              </div>
+              <div className="text-sm sm:text-base text-gray-400">
+                Projects Delivered
+              </div>
             </div>
           </ScrollFade>
-          
+
           <ScrollFade direction="up" delay={0.2}>
             <div className="text-center">
-              <div className="text-4xl sm:text-5xl md:text-6xl mb-2 text-white">5</div>
-              <div className="text-sm sm:text-base text-gray-400">Industries Served</div>
+              <div className="text-4xl sm:text-5xl md:text-6xl mb-2 text-white">
+                5
+              </div>
+              <div className="text-sm sm:text-base text-gray-400">
+                Industries Served
+              </div>
             </div>
           </ScrollFade>
-          
+
           <ScrollFade direction="up" delay={0.3}>
             <div className="text-center">
-              <div className="text-4xl sm:text-5xl md:text-6xl mb-2 text-white">100%</div>
-              <div className="text-sm sm:text-base text-gray-400">On-Time Delivery</div>
+              <div className="text-4xl sm:text-5xl md:text-6xl mb-2 text-white">
+                100%
+              </div>
+              <div className="text-sm sm:text-base text-gray-400">
+                On-Time Delivery
+              </div>
             </div>
           </ScrollFade>
-          
+
           <ScrollFade direction="up" delay={0.4}>
             <div className="text-center">
-              <div className="text-4xl sm:text-5xl md:text-6xl mb-2 text-white">2+</div>
-              <div className="text-sm sm:text-base text-gray-400">Years Experience</div>
+              <div className="text-4xl sm:text-5xl md:text-6xl mb-2 text-white">
+                2+
+              </div>
+              <div className="text-sm sm:text-base text-gray-400">
+                Years Experience
+              </div>
             </div>
           </ScrollFade>
         </div>
@@ -68,7 +87,9 @@ export function TrustedClients() {
                 <div className="text-base sm:text-lg mb-2 text-white">
                   {client.name}
                 </div>
-                <div className="text-xs sm:text-sm text-gray-400">{client.industry}</div>
+                <div className="text-xs sm:text-sm text-gray-400">
+                  {client.industry}
+                </div>
               </div>
             ))}
           </div>
@@ -80,12 +101,20 @@ export function TrustedClients() {
             <p className="text-base sm:text-lg text-gray-400 mb-6">
               Ready to join these successful partnerships?
             </p>
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-lime-500 text-gray-900 rounded-lg hover:bg-lime-400 transition-colors duration-300"
+            <Link
+              to="/contact"
+              className="group relative inline-flex items-center justify-center h-[52px] px-8 min-w-[180px] bg-[#1f2a38] text-white rounded-full overflow-hidden transition-all"
+              style={{ boxShadow: "0 15px 30px rgba(31, 42, 56, 0.5)" }}
             >
-              Let's Work Together
-            </a>
+              <span className="btn-text-one absolute w-full left-0 flex items-center justify-center gap-2 text-sm font-medium uppercase tracking-wider transition-[top] duration-500 ease-in-out top-1/2 -translate-y-1/2">
+                Let's work
+                <ArrowRight size={18} className="animate-icon-pulse" />
+              </span>
+              <span className="btn-text-two absolute w-full left-0 flex items-center justify-center gap-2 text-sm font-medium uppercase tracking-wider transition-[top] duration-500 ease-in-out top-[150%] -translate-y-1/2">
+                <ArrowRight size={18} className="animate-icon-pulse" />
+                Contact me
+              </span>
+            </Link>
           </div>
         </ScrollFade>
       </div>

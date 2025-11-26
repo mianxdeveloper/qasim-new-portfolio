@@ -23,7 +23,6 @@ const projectData: Record<string, any> = {
     wireframeImages: [
       "/assets/Thumbnail5.jpg",
       "/assets/project-imgs/project5-img1.png",
-      "/assets/project-imgs/project5-img2.png",
       "/assets/project-imgs/project5-img3.png",
       "/assets/project-imgs/project5-img4.png",
     ],
@@ -41,12 +40,12 @@ const projectData: Record<string, any> = {
       "Presenting complex sales data in an easily digestible format while allowing deep-dive analysis for power users.",
     solution:
       "Hierarchical information architecture with overview dashboards and detailed drill-down views. Clear data visualization with contextual insights.",
-    image: "/assets/Thumbnail2.png",
+    image: "/assets/Thumbnail2.jpg",
     nextProject: 3,
     prevProject: 1,
     wireframeImages: [
-      "/assets/Thumbnail2.png",
-      "/assets/project-imgs/project2-img1.png",
+      "/assets/Thumbnail2.jpg",
+      "/assets/project-imgs/project2-img1.jpg",
     ],
   },
   "3": {

@@ -45,9 +45,9 @@ export const prototypes: Prototype[] = [
     title: "E-commerce Dashboard",
     category: "Web Application",
     description: "Modern admin dashboard with real-time analytics",
-    desktopImage: "/assets/Thumbnail2.png",
-    tabletImage: "/assets/Thumbnail2.png",
-    mobileImage: "/assets/Thumbnail2.png",
+    desktopImage: "/assets/Thumbnail2.jpg",
+    tabletImage: "/assets/Thumbnail2.jpg",
+    mobileImage: "/assets/Thumbnail2.jpg",
     color: "from-blue-500 to-cyan-500",
   },
   {
