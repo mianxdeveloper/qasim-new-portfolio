@@ -52,7 +52,7 @@ export function About() {
                 <div className="text-center p-8">
                   <div className="absolute inset-0 opacity-5">
                     <img
-                      src="/assets/default.jpg"
+                      src="/assets/qasim.png"
                       alt="Background Pattern"
                       className="w-full h-full object-cover"
                     />
