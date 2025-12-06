@@ -6,117 +6,6 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 const projectData: Record<string, any> = {
   "1": {
     id: 1,
-    title: "IronClad Fitness Website",
-    category: "Landing Page",
-    image: "/assets/Thumbnail5.jpg",
-    description:
-      "High-energy landing page for a fitness brand launching new membership packages.",
-    role: ["UI/UX Design", "Branding Support", "Prototyping"],
-    tools: ["Figma"],
-    timeline: "2 weeks",
-    challenge:
-      "Creating an energetic, motivating design that appeals to fitness enthusiasts while maintaining clarity and ease of use for membership sign-ups.",
-    solution:
-      "Bold typography, dynamic imagery, and clear membership tier comparison. Streamlined sign-up flow with minimal friction.",
-    nextProject: 2,
-    prevProject: 6,
-    wireframeImages: [
-      "/assets/Thumbnail5.jpg",
-      "/assets/project-imgs/project5-img1.png",
-      "/assets/project-imgs/project5-img3.png",
-      "/assets/project-imgs/project5-img4.png",
-    ],
-  },
-  "2": {
-    id: 2,
-    title: "Crypto Vault Website",
-    category: "Dashboard",
-    description:
-      "Analytics dashboard for ecommerce store owners to track sales, inventory, and customer metrics.",
-    role: ["UI/UX Design", "Data Visualization", "User Research"],
-    tools: ["Figma"],
-    timeline: "4 weeks",
-    challenge:
-      "Presenting complex sales data in an easily digestible format while allowing deep-dive analysis for power users.",
-    solution:
-      "Hierarchical information architecture with overview dashboards and detailed drill-down views. Clear data visualization with contextual insights.",
-    image: "/assets/Thumbnail2.jpg",
-    nextProject: 3,
-    prevProject: 1,
-    wireframeImages: [
-      "/assets/Thumbnail2.jpg",
-      "/assets/project-imgs/project2-img1.jpg",
-    ],
-  },
-  "3": {
-    id: 3,
-    title: "Real Estate Website",
-    category: "Mobile App",
-    image: "/assets/Thumbnail4.jpg",
-    description:
-      "Mobile application for on-demand Real Estate with scheduling and payment features.",
-    role: ["UI/UX Design", "User Flows", "Prototyping", "Usability Testing"],
-    tools: ["Figma"],
-    timeline: "3 weeks",
-    challenge:
-      "Simplifying the booking process while accommodating various service types, scheduling preferences, and payment options.",
-    solution:
-      "Step-by-step booking flow with clear progress indicators. Smart defaults and saved preferences to speed up repeat bookings.",
-    nextProject: 4,
-    prevProject: 2,
-    wireframeImages: [
-      "/assets/Thumbnail4.jpg",
-      "/assets/project-imgs/project4-img1.jpeg",
-      "/assets/project-imgs/project4-img2.jpeg",
-      "/assets/project-imgs/project4-img3.jpeg",
-    ],
-  },
-  "4": {
-    id: 4,
-    title: "RenovateRight - Bathroom and Kitchen Remodeling Website",
-    category: "Website",
-    image: "/assets/Thumbnail3.jpg",
-    description:
-      "Analytics dashboard for ecommerce store owners to track sales, inventory, and customer metrics.",
-    role: ["UI/UX Design", "Data Visualization", "User Research"],
-    tools: ["Figma"],
-    timeline: "4 weeks",
-    challenge:
-      "Presenting complex sales data in an easily digestible format while allowing deep-dive analysis for power users.",
-    solution:
-      "Hierarchical information architecture with overview dashboards and detailed drill-down views. Clear data visualization with contextual insights.",
-    nextProject: 5,
-    prevProject: 3,
-    wireframeImages: [
-      "/assets/Thumbnail3.jpg",
-      "/assets/project-imgs/project3-img1.jpeg",
-      "/assets/project-imgs/project3-img2.jpeg",
-      "/assets/project-imgs/project3-img3.jpeg",
-    ],
-  },
-  "5": {
-    id: 5,
-    title: "Plumbing Website",
-    category: "Landing Page",
-    image: "/assets/Thumbnail1.png",
-    description:
-      "A modern, conversion-focused landing page designed for a kitchen remodeling company.",
-    role: ["UI/UX Design", "Research", "Wireframing", "Prototyping"],
-    tools: ["Figma", "Adobe Illustrator"],
-    timeline: "3 weeks",
-    challenge:
-      "The client needed a landing page that would capture leads effectively while showcasing their premium kitchen remodeling services. The main challenge was balancing visual appeal with clear calls-to-action.",
-    solution:
-      "Created a clean, structured layout with high-quality imagery, clear service descriptions, and strategically placed contact forms. Implemented trust signals through testimonials and before/after galleries.",
-    nextProject: 6,
-    prevProject: 4,
-    wireframeImages: [
-      "/assets/project-imgs/project1-img1.png",
-      "/assets/Thumbnail1.png",
-    ],
-  },
-  "6": {
-    id: 6,
     title: "ALGA by MINDRA website design",
     category: "Landing Page",
     image: "/assets/Thumbnail6.jpg",
@@ -134,8 +23,8 @@ const projectData: Record<string, any> = {
       "Alga needed a website that clearly communicated its services. The previous structure felt scattered, and users struggled to understand what the brand offered. The visual identity lacked consistency, which made it harder to build trust.",
     solution:
       "I designed a simple, organized layout that helps users explore the core services without confusion. The content hierarchy was refined to make each section clear and meaningful. The branding was polished to create a premium and trustworthy feel, resulting in a smooth and cohesive experience.",
-    nextProject: 1,
-    prevProject: 5,
+    nextProject: 2,
+    prevProject: 6,
     wireframeImages: [
       "/assets/project-imgs/project6-img1.jpg",
       "/assets/project-imgs/project6-img2.jpg",
@@ -144,6 +33,117 @@ const projectData: Record<string, any> = {
       "/assets/project-imgs/project6-img5.jpg",
       "/assets/project-imgs/project6-img7.jpg",
       "/assets/Thumbnail6.jpg",
+    ],
+  },
+  "2": {
+    id: 2,
+    title: "IronClad Fitness Website",
+    category: "Landing Page",
+    image: "/assets/Thumbnail5.jpg",
+    description:
+      "High-energy landing page for a fitness brand launching new membership packages.",
+    role: ["UI/UX Design", "Branding Support", "Prototyping"],
+    tools: ["Figma"],
+    timeline: "2 weeks",
+    challenge:
+      "Creating an energetic, motivating design that appeals to fitness enthusiasts while maintaining clarity and ease of use for membership sign-ups.",
+    solution:
+      "Bold typography, dynamic imagery, and clear membership tier comparison. Streamlined sign-up flow with minimal friction.",
+    nextProject: 3,
+    prevProject: 1,
+    wireframeImages: [
+      "/assets/Thumbnail5.jpg",
+      "/assets/project-imgs/project5-img1.png",
+      "/assets/project-imgs/project5-img3.png",
+      "/assets/project-imgs/project5-img4.png",
+    ],
+  },
+  "3": {
+    id: 3,
+    title: "Crypto Vault Website",
+    category: "Dashboard",
+    description:
+      "Analytics dashboard for ecommerce store owners to track sales, inventory, and customer metrics.",
+    role: ["UI/UX Design", "Data Visualization", "User Research"],
+    tools: ["Figma"],
+    timeline: "4 weeks",
+    challenge:
+      "Presenting complex sales data in an easily digestible format while allowing deep-dive analysis for power users.",
+    solution:
+      "Hierarchical information architecture with overview dashboards and detailed drill-down views. Clear data visualization with contextual insights.",
+    image: "/assets/Thumbnail2.jpg",
+    nextProject: 4,
+    prevProject: 2,
+    wireframeImages: [
+      "/assets/Thumbnail2.jpg",
+      "/assets/project-imgs/project2-img1.jpg",
+    ],
+  },
+  "4": {
+    id: 4,
+    title: "Real Estate Website",
+    category: "Mobile App",
+    image: "/assets/Thumbnail4.jpg",
+    description:
+      "Mobile application for on-demand Real Estate with scheduling and payment features.",
+    role: ["UI/UX Design", "User Flows", "Prototyping", "Usability Testing"],
+    tools: ["Figma"],
+    timeline: "3 weeks",
+    challenge:
+      "Simplifying the booking process while accommodating various service types, scheduling preferences, and payment options.",
+    solution:
+      "Step-by-step booking flow with clear progress indicators. Smart defaults and saved preferences to speed up repeat bookings.",
+    nextProject: 5,
+    prevProject: 3,
+    wireframeImages: [
+      "/assets/Thumbnail4.jpg",
+      "/assets/project-imgs/project4-img1.jpeg",
+      "/assets/project-imgs/project4-img2.jpeg",
+      "/assets/project-imgs/project4-img3.jpeg",
+    ],
+  },
+  "5": {
+    id: 5,
+    title: "RenovateRight - Bathroom and Kitchen Remodeling Website",
+    category: "Website",
+    image: "/assets/Thumbnail3.jpg",
+    description:
+      "Premium remodeling made clear, helping homeowners upgrade kitchens and bathrooms with confidence",
+    role: ["UI/UX Design", "Data Visualization", "User Research"],
+    tools: ["Figma"],
+    timeline: "4 weeks",
+    challenge:
+      "Presenting complex sales data in an easily digestible format while allowing deep-dive analysis for power users.",
+    solution:
+      "Hierarchical information architecture with overview dashboards and detailed drill-down views. Clear data visualization with contextual insights.",
+    nextProject: 6,
+    prevProject: 4,
+    wireframeImages: [
+      "/assets/Thumbnail3.jpg",
+      "/assets/project-imgs/project3-img1.jpeg",
+      "/assets/project-imgs/project3-img2.jpeg",
+      "/assets/project-imgs/project3-img3.jpeg",
+    ],
+  },
+  "6": {
+    id: 6,
+    title: "Plumbing Website",
+    category: "Landing Page",
+    image: "/assets/Thumbnail1.png",
+    description:
+      "A modern, conversion-focused landing page designed for a kitchen remodeling company.",
+    role: ["UI/UX Design", "Research", "Wireframing", "Prototyping"],
+    tools: ["Figma", "Adobe Illustrator"],
+    timeline: "3 weeks",
+    challenge:
+      "The client needed a landing page that would capture leads effectively while showcasing their premium kitchen remodeling services. The main challenge was balancing visual appeal with clear calls-to-action.",
+    solution:
+      "Created a clean, structured layout with high-quality imagery, clear service descriptions, and strategically placed contact forms. Implemented trust signals through testimonials and before/after galleries.",
+    nextProject: 1,
+    prevProject: 5,
+    wireframeImages: [
+      "/assets/project-imgs/project1-img1.png",
+      "/assets/Thumbnail1.png",
     ],
   },
 };

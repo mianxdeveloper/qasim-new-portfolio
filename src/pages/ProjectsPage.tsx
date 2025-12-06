@@ -9,6 +9,16 @@ import { ScrollFade } from "../components/ScrollFade";
 const allProjects = [
   {
     id: 1,
+    title: "ALGA by MINDRA website design",
+    category: "Landing Page",
+    tags: ["Landing Page", "Website"],
+    image: "/assets/Thumbnail6.jpg",
+    description:
+      "A modern platform crafted to help small businesses manage their products and customers with clarity.",
+    isLive: true, // 🔴 Only this project has LIVE badge
+  },
+  {
+    id: 2,
     title: "IronClad Fitness Website",
     category: "Landing Page",
     tags: ["Landing Page"],
@@ -17,7 +27,7 @@ const allProjects = [
       "High-energy landing page for fitness brand with membership sign-up.",
   },
   {
-    id: 2,
+    id: 3,
     title: "Crypto Vault Website",
     category: "Dashboard",
     tags: ["Dashboard"],
@@ -26,7 +36,7 @@ const allProjects = [
       "Analytics dashboard for ecommerce store with sales tracking and metrics.",
   },
   {
-    id: 3,
+    id: 4,
     title: "Real Estate Website",
     category: "Mobile App",
     tags: ["Mobile App"],
@@ -35,7 +45,7 @@ const allProjects = [
       "Mobile app design for on-demand laundry service with booking flow.",
   },
   {
-    id: 4,
+    id: 5,
     title: "RenovateRight - Bathroom and Kitchen Remodeling Website",
     category: "Website",
     tags: ["Website"],
@@ -44,23 +54,13 @@ const allProjects = [
       "Complete website for bathroom renovation company with project gallery.",
   },
   {
-    id: 5,
+    id: 6,
     title: "Plumbing Website",
     category: "Landing Page",
     tags: ["Landing Page", "Website"],
     image: "/assets/Thumbnail3.jpg",
     description:
       "Modern landing page for kitchen remodeling services with lead capture forms.",
-  },
-  {
-    id: 6,
-    title: "ALGA by MINDRA website design",
-    category: "Landing Page",
-    tags: ["Landing Page", "Website"],
-    image: "/assets/Thumbnail6.jpg",
-    description:
-      "A modern platform crafted to help small businesses manage their products and customers with clarity.",
-    isLive: true, // 🔴 Only this project has LIVE badge
   },
 ];
 

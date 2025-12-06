@@ -8,40 +8,40 @@ import { ScrollFade } from "./ScrollFade";
 const projects = [
   {
     id: 1,
+    title: "ALGA by MINDRA website design",
+    category: "Landing Page",
+    image: "/assets/Thumbnail6.jpg",
+    isLive: true, // 🔴 ONLY this one has LIVE tag
+  },
+  {
+    id: 2,
     title: "IronClad Fitness Website",
     category: "Landing Page",
     image: "/assets/Thumbnail5.jpg",
   },
   {
-    id: 2,
+    id: 3,
     title: "Crypto Vault Website",
     category: "Dashboard",
     image: "/assets/Thumbnail2.jpg",
   },
   {
-    id: 3,
+    id: 4,
     title: "Real Estate Website",
     category: "Mobile App",
     image: "/assets/Thumbnail4.jpg",
   },
   {
-    id: 4,
+    id: 5,
     title: "RenovateRight - Bathroom and Kitchen Remodeling Website",
     category: "Website",
     image: "/assets/Thumbnail1.png",
   },
   {
-    id: 5,
+    id: 6,
     title: "Plumbing Website",
     category: "Landing Page",
     image: "/assets/Thumbnail3.jpg",
-  },
-  {
-    id: 6,
-    title: "ALGA by MINDRA website design",
-    category: "Landing Page",
-    image: "/assets/Thumbnail6.jpg",
-    isLive: true, // 🔴 ONLY this one has LIVE tag
   },
 ];
 
