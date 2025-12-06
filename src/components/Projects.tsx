@@ -36,6 +36,13 @@ const projects = [
     category: "Landing Page",
     image: "/assets/Thumbnail3.jpg",
   },
+  {
+    id: 6,
+    title: "ALGA by MINDRA website design",
+    category: "Landing Page",
+    image: "/assets/Thumbnail6.jpg",
+    isLive: true, // 🔴 ONLY this one has LIVE tag
+  },
 ];
 
 export function Projects() {
@@ -61,6 +68,22 @@ export function Projects() {
                 to={`/projects/${project.id}`}
                 className="group relative bg-gray-800 border border-gray-700 rounded-2xl overflow-hidden hover:border-lime-500 hover:shadow-xl transition-all h-full flex flex-col"
               >
+                {/* 🔴 LIVE BADGE */}
+                {project.isLive && (
+                  <div
+                    className="absolute right-2 text-white text-xs shadow-lg"
+                    style={{
+                      backgroundColor: "#e60000",
+                      fontWeight: "900",
+                      padding: "5px 15px",
+                      borderRadius: "5px",
+                      marginTop: "10px",
+                    }}
+                  >
+                    LIVE
+                  </div>
+                )}
+
                 <div className="aspect-[4/3] overflow-hidden bg-gray-700">
                   <ImageWithFallback
                     src={project.image}
@@ -68,6 +91,7 @@ export function Projects() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
+
                 <div className="p-6">
                   <div className="text-sm text-lime-500 mb-2">
                     {project.category}

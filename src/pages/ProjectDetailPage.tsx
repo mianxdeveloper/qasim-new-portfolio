@@ -19,7 +19,7 @@ const projectData: Record<string, any> = {
     solution:
       "Bold typography, dynamic imagery, and clear membership tier comparison. Streamlined sign-up flow with minimal friction.",
     nextProject: 2,
-    prevProject: 5,
+    prevProject: 6,
     wireframeImages: [
       "/assets/Thumbnail5.jpg",
       "/assets/project-imgs/project5-img1.png",
@@ -108,11 +108,42 @@ const projectData: Record<string, any> = {
       "The client needed a landing page that would capture leads effectively while showcasing their premium kitchen remodeling services. The main challenge was balancing visual appeal with clear calls-to-action.",
     solution:
       "Created a clean, structured layout with high-quality imagery, clear service descriptions, and strategically placed contact forms. Implemented trust signals through testimonials and before/after galleries.",
-    nextProject: 4,
-    prevProject: 1,
+    nextProject: 6,
+    prevProject: 4,
     wireframeImages: [
       "/assets/project-imgs/project1-img1.png",
       "/assets/Thumbnail1.png",
+    ],
+  },
+  "6": {
+    id: 6,
+    title: "ALGA by MINDRA website design",
+    category: "Landing Page",
+    image: "/assets/Thumbnail6.jpg",
+    description:
+      "A modern platform crafted to help small businesses manage their products and customers with clarity.",
+    role: [
+      "UI/UX Design",
+      "Website Structure Planning",
+      "Content Strategy",
+      "Brand Alignment",
+    ],
+    tools: ["Figma"],
+    timeline: "3 weeks",
+    challenge:
+      "Alga needed a website that clearly communicated its services. The previous structure felt scattered, and users struggled to understand what the brand offered. The visual identity lacked consistency, which made it harder to build trust.",
+    solution:
+      "I designed a simple, organized layout that helps users explore the core services without confusion. The content hierarchy was refined to make each section clear and meaningful. The branding was polished to create a premium and trustworthy feel, resulting in a smooth and cohesive experience.",
+    nextProject: 1,
+    prevProject: 5,
+    wireframeImages: [
+      "/assets/project-imgs/project6-img1.jpg",
+      "/assets/project-imgs/project6-img2.jpg",
+      "/assets/project-imgs/project6-img3.jpg",
+      "/assets/project-imgs/project6-img4.jpg",
+      "/assets/project-imgs/project6-img5.jpg",
+      "/assets/project-imgs/project6-img7.jpg",
+      "/assets/Thumbnail6.jpg",
     ],
   },
 };

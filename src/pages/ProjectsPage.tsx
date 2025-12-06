@@ -52,6 +52,16 @@ const allProjects = [
     description:
       "Modern landing page for kitchen remodeling services with lead capture forms.",
   },
+  {
+    id: 6,
+    title: "ALGA by MINDRA website design",
+    category: "Landing Page",
+    tags: ["Landing Page", "Website"],
+    image: "/assets/Thumbnail6.jpg",
+    description:
+      "A modern platform crafted to help small businesses manage their products and customers with clarity.",
+    isLive: true, // 🔴 Only this project has LIVE badge
+  },
 ];
 
 const filters = ["All", "Website", "Landing Page", "Dashboard", "Mobile App"];
@@ -107,6 +117,22 @@ export function ProjectsPage() {
                 to={`/projects/${project.id}`}
                 className="group relative bg-gray-800 border border-gray-700 rounded-xl sm:rounded-2xl overflow-hidden hover:border-lime-500 hover:shadow-xl transition-all block h-full"
               >
+                {/* 🔴 LIVE TAG (only shows for project 6) */}
+                {project.isLive && (
+                  <div
+                    className="absolute right-2 text-white text-xs shadow-lg"
+                    style={{
+                      backgroundColor: "#e60000",
+                      fontWeight: "900",
+                      padding: "5px 15px",
+                      borderRadius: "5px",
+                      marginTop: "10px",
+                    }}
+                  >
+                    LIVE
+                  </div>
+                )}
+
                 <div className="aspect-[4/3] overflow-hidden bg-gray-900">
                   <ImageWithFallback
                     src={project.image}
@@ -114,6 +140,7 @@ export function ProjectsPage() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
+
                 <div className="p-6">
                   <div className="text-sm text-lime-400 mb-2">
                     {project.category}

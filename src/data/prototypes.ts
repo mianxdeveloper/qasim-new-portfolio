@@ -80,4 +80,15 @@ export const prototypes: Prototype[] = [
     mobileImage: "/assets/Thumbnail5.jpg",
     color: "from-green-500 to-emerald-500",
   },
+  {
+    id: 6,
+    title: "ALGA by MINDRA website design",
+    category: "Landing Page",
+    description:
+      "A modern platform crafted to help small businesses manage their products and customers with clarity.",
+    desktopImage: "/assets/Thumbnail6.jpg",
+    tabletImage: "/assets/Thumbnail6.jpg",
+    mobileImage: "/assets/Thumbnail6.jpg",
+    color: "from-green-500 to-emerald-500",
+  },
 ];
